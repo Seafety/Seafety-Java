@@ -4,6 +4,16 @@ class DataSource {
     private String type;
     private String details;
 
+    public DataSource() {
+    }
+
+    public DataSource(int sourceId, String name, String type, String details) {
+        this.sourceId = sourceId;
+        this.name = name;
+        this.type = type;
+        this.details = details;
+    }
+
     public int getSourceId() {
         return sourceId;
     }

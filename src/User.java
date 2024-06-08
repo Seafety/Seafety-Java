@@ -6,6 +6,9 @@ class User {
     private String email;
     private String password;
 
+    public User() {
+    }
+
     public User(int userId, String nome, String sobrenome, String email, String password) {
         this.userId = userId;
         this.nome = nome;
@@ -14,14 +17,12 @@ class User {
         this.password = password;
     }
 
-    // Getters
     public int getUserId() { return userId; }
     public String getNome() { return nome; }
     public String getSobrenome() { return sobrenome; }
     public String getEmail() { return email; }
     public String getPassword() { return password; }
 
-    // Setters
     public void setUserId(int userId) { this.userId = userId; }
     public void setNome(String nome) { this.nome = nome; }
     public void setSobrenome(String sobrenome) { this.sobrenome = sobrenome; }
